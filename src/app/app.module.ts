@@ -11,6 +11,8 @@ import { MainPageComponent } from './user/main-page/main-page.component';
 import { MyTicketComponent } from './user/my-ticket/my-ticket.component';
 import { LoginComponent } from './login/login.component';
 import { MovieComponent } from './user/movie/movie.component';
+import { MainPageManagementComponent } from './admin/main-page-management/main-page-management.component';
+import { ListMovieManagementComponent } from './admin/movie-management/list-movie-management/list-movie-management.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { MovieComponent } from './user/movie/movie.component';
     MainPageComponent,
     MyTicketComponent,
     LoginComponent,
-    MovieComponent
+    MovieComponent,
+    MainPageManagementComponent,
+    ListMovieManagementComponent,
   ],
   imports: [
     BrowserModule,

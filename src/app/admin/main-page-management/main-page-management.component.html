@@ -1,0 +1,11 @@
+<mat-toolbar color="primary">Admin
+    <button mat-raised-button [matMenuTriggerFor]="menu" color="accent" class="toolbar-btn">Menu</button>
+    <mat-menu #menu="matMenu">
+        <button mat-menu-item routerLink="/">Movie Management</button>
+        <button mat-menu-item routerLink="/">Hall Management</button>
+        <button mat-menu-item routerLink="/">User Management</button>
+        <button mat-menu-item routerLink="/">TIcket Scheduler</button>
+    </mat-menu>
+</mat-toolbar>
+
+<router-outlet></router-outlet>

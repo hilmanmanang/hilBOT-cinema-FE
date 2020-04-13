@@ -4,7 +4,8 @@ import { MainPageComponent } from './user/main-page/main-page.component';
 import { MovieComponent } from './user/movie/movie.component';
 import { MyTicketComponent } from './user/my-ticket/my-ticket.component';
 import { LoginComponent } from './login/login.component';
-
+import { MainPageManagementComponent } from './admin/main-page-management/main-page-management.component';
+import { ListMovieManagementComponent } from './admin/movie-management/list-movie-management/list-movie-management.component';
 
 const routes: Routes = [
   {
@@ -18,6 +19,16 @@ const routes: Routes = [
       {
         path: 'my-tiket',
         component: MyTicketComponent
+      }
+    ]
+  },
+  {
+    path: 'main-page-management',
+    component: MainPageManagementComponent,
+    children: [
+      {
+        path: '',
+        component: ListMovieManagementComponent
       }
     ]
   },
