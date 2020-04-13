@@ -1,0 +1,10 @@
+<mat-toolbar color="primary" >hillBOT Cinema
+<button mat-raised-button [matMenuTriggerFor]="menu" color="accent" class="toolbar-btn">Menu</button>
+<mat-menu #menu="matMenu">
+<button mat-menu-item routerLink="/">Home</button>
+  <button mat-menu-item routerLink="/my-tiket">My Movie</button>
+  <button mat-menu-item routerLink="/login">Login</button>
+</mat-menu>
+</mat-toolbar>
+
+<router-outlet></router-outlet>
